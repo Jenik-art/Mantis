@@ -12,7 +12,7 @@ class ProjectHelper:
         wd.find_element_by_xpath("//table[3]/tbody/tr[1]/td/form/input[2]").click()
         self.fill_project_form(project)
         wd.find_element_by_css_selector("input.button").click()
-        time.sleep(5)
+        time.sleep(10)
         self.return_project_page(wd)
         project_cache = None
 

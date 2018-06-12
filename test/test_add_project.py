@@ -7,7 +7,7 @@ def random_string(prefix, maxlen):
     symbols = string.ascii_letters + " "*2
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
-n = 1
+n = 2
 testdata = [
     Project(name=random_string("project", 10))
     for i in range(n)
